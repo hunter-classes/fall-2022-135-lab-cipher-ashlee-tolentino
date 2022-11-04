@@ -1,8 +1,13 @@
+CXXFLAGS=--coverage -g -O0
+
 main: main.o funcs.o caesar.o
 	g++ -o main main.o funcs.o caesar.o
 
 tests: tests.o funcs.o caesar.o
-	g++ -o tests tests.o funcs.o caesar.o
+	g++ -o tests --coverage -g -O0 tests.o funcs.o caesar.o
+	./tests
+	gcovr 2> /dev/null > /dev/null
+	gcovr --html-details coverage.html
 
 
 
