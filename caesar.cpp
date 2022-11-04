@@ -2,7 +2,7 @@
 Author: Ashlee Tolentino
 Course: CSCI-135
 Instructor: Michael Zamansky
-Assignment: Lab8
+Assignment: Lab-cipher
 
 This program contains functions implementing Caesar cipher encryption.
 */
